@@ -59,7 +59,7 @@ const formNote = document.getElementById('formNote');
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  if (form.action.includes('YOUR_FORM_ID')) {
+  if (form.action.includes('xkjwljed')) {
     formNote.textContent = 'Form not connected yet — add your Formspree ID in index.html.';
     formNote.className = 'form-note mono error';
     return;
