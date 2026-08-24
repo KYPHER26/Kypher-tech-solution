@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Kypher Tech Solutions</title>
+<meta name="description" content="Photos of Kypher Tech Solutions' work: projects, processed certificates, and our team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Kypher Tech Solutions" class="logo-img"><span>KYPHER://TECH</span></a>
+    <div class="navlinks" id="navlinks">
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#reach">Reach Us</a>
+    </div>
+    <a href="index.html#reach" class="navcta">Start a request →</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="gallery-hero wrap" style="border-top:none;">
+    <div class="eyebrow">Dar es Salaam · Tanzania</div>
+    <h1>Work on record.</h1>
+    <p>A look at what we've filed, built, and stamped approved — from client projects to the certificates that came out the other end.</p>
+  </section>
+
+  <section id="gallery" style="border-top:none;padding-top:0;">
+    <div class="wrap">
+      <div class="filter-row" id="filterRow">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="projects">Projects</button>
+        <button class="filter-btn" data-filter="certificates">Certificates</button>
+        <button class="filter-btn" data-filter="team">Team & Office</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <figure class="gallery-item" data-category="projects">
+          <img src="assets/gallery/project-1.jpg" alt="Client project" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/project-1.jpg</span><small>Client project screenshot</small></div>
+          <figcaption>Client website build</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="projects">
+          <img src="assets/gallery/project-2.jpg" alt="Client project" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/project-2.jpg</span><small>Client project screenshot</small></div>
+          <figcaption>Small business system</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="certificates">
+          <img src="assets/gallery/cert-1.jpg" alt="Processed certificate" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/cert-1.jpg</span><small>Certificate / document</small></div>
+          <figcaption>RITA certificate on file</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="certificates">
+          <img src="assets/gallery/cert-2.jpg" alt="Processed certificate" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/cert-2.jpg</span><small>Certificate / document</small></div>
+          <figcaption>TIN certificate on file</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="team">
+          <img src="assets/gallery/team-1.jpg" alt="Team photo" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/team-1.jpg</span><small>Team photo</small></div>
+          <figcaption>The Kypher team</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="team">
+          <img src="assets/gallery/office-1.jpg" alt="Office photo" loading="lazy" onerror="this.parentElement.classList.add('gallery-empty')">
+          <div class="gallery-placeholder"><span class="mono">assets/gallery/office-1.jpg</span><small>Office photo</small></div>
+          <figcaption>Where we work</figcaption>
+        </figure>
+
+      </div>
+
+      <p class="gallery-note mono">Empty tiles show the filename Kypher is looking for — drop a matching image into <span class="mono">/assets/gallery/</span> and it appears here automatically.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Kypher Tech Solutions</span>
+  <span>Applications, handled.</span>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>
